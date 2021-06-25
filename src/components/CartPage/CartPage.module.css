@@ -1,0 +1,160 @@
+.CartPage {
+  width: 90%;
+  padding: 0px 50px;
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+  padding-bottom: 80px ;
+  margin: 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.CartPage > .Cart {
+  width: 20%;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(241, 93, 93);
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 35px;
+  margin: 10px 0px ;
+}
+
+.CartPageTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CartPageTitle > h2 {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.CartPageTitle > button {
+  font-weight: bold;
+  font-size: 40px;
+  background-color:  rgb(192, 223, 238);;
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase; 
+}
+
+.CartPageTitle > button:nth-child(3) {
+  background-color: rgb(213, 192, 233);
+}
+
+.CartPageTitle > button:hover {
+  color: white;
+  background-color: rgb(88, 88, 214);
+  box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 20%);
+  transition: all 0.5s ease-out;
+}
+
+.CartPageTitle > button:nth-child(3):hover {
+  color: white;
+  background-color: rgb(124, 62, 129);
+  box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 20%);
+  transition: all 0.5s ease-out;
+}
+
+.SelectedContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.EmptyCart {
+  display: flex;
+  font-size: 60px;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 40px;
+  color: white;
+  background-color: rgb(245, 83, 83);
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+}
+
+.SelectedItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  margin: 5px;
+  width: 100%;
+}
+
+.SelectedItem > img {
+  width: 15%;
+  height: 15%;
+  border-radius: 20%;
+  padding: 20px;
+}
+
+.SelectedItem > p,
+.SelectedItem > .Quantity > p {
+  width: 10%;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.SelectedItem > button {
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase; 
+  border: none;
+  font-weight: bold;
+  padding: 20px;
+  background-color: rgb(247, 197, 181);
+}
+
+.SelectedItem > button:hover {
+  color: white;
+  background-color: rgb(214, 19, 36);
+  box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 20%);
+  transition: all 0.5s ease-out;
+}
+
+.Quantity {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Quantity > button {
+  color: white;
+  background-color: rgb(120, 128, 240);
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+.Quantity > button:focus {
+  background-position: left bottom;
+  color: white;
+  background: linear-gradient(to right,rgb(74, 81, 180) 50%, rgb(230, 66, 66) 50%);
+  background-position: right bottom;
+  box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 20%);
+  transition: all 1.2s ease;
+  background-size: 200% 100%;
+}
