@@ -24,7 +24,7 @@ function HomePage(props) {
   const handleSearchInput = useCallback(_.debounce((input) => {
     getListCocktail(input)
     dispatch(GlobalActions.saveSearchInput(input))
-  },2000), [])
+  },500), [])
 
   const getListCocktail = (input) => {
     dispatch(GlobalActions.toggleLoading())
