@@ -17,7 +17,7 @@ function LoginPage(props) {
       dispatch(GlobalActions.toggleLoading())
       setTimeout(() => {
         dispatch(GlobalActions.toggleLoading())
-      },2000)
+      },500)
     }, [])
 
     const handleUsername = (inputUsername) => {
